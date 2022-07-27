@@ -1,0 +1,142 @@
+*,::after,::before
+{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+:root
+{
+  --main-color:#eee;
+  --button-yellow:#f1c40f;
+  --button-orange:orange;
+  --font-black:#000
+}
+
+html
+{
+  font-size:10px;
+  font-family:Verdana,san-serif;
+}
+body
+{
+  background:var(--main-color)
+}
+
+header 
+{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 0px;
+  flex-wrap:wrap;
+}
+
+#header-img
+{
+  width:40%;
+  min-width:200px;
+  max-width:300px;
+}
+#nav-bar
+{
+  width:43%;
+  max-width:100%;
+  margin:0px 10px
+}
+#nav-bar ul
+{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+
+#nav-bar ul li a
+{
+text-decoration:none;
+display:block;
+width:100%;
+color:var(--font-black);
+padding:0px 10px;
+font-size:1.6rem;
+text-transform:captalize;
+font-weight:400;
+
+}
+
+main
+{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:80%;
+  min-width:80%;
+  max-width:100%;
+  margin:10px auto
+}
+
+
+section#query h2
+{
+text-align:center;
+margin:10px 0px;
+font-size:1.9rem;
+}
+
+section form fieldset
+{
+border:none;
+display:flex;
+flex-direction:column;
+}
+
+section form fieldset input[type="email"]
+{
+  padding:5px;
+  width:300px;
+  margin:5px auto 15px;
+}
+
+
+section form fieldset input[type="submit"]
+{
+  padding:10px;
+  width:170px;
+  margin:0px auto 15px;
+  background:var(--button-yellow);
+  font-weight:600;
+  font-size:1.6rem;
+  cursor:pointer;
+  transition:all .5s linear ;
+  border:none;
+  border-radius:3px;
+}
+
+section form fieldset input[type="submit"]:hover 
+{
+    background:var(--button-orange);
+
+}
+
+@media only screen and (max-width:600px)
+{
+    header{justify-content:center}
+    #header-img{width:250px;}
+    #nav-bar
+    {
+      width:100%;
+    }
+    #nav-bar ul {justify-content:center;}
+
+}
+
+@media only screen and (max-width:768px)
+{
+   #nav-bar
+    {
+      width:50%;
+    }
+  #nav-bar ul{margin:10px 10px;}
+}
