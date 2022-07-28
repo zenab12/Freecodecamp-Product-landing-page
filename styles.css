@@ -1,142 +1,224 @@
-*,::after,::before
-{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+*,::after,::before {
+     padding:0;
+     margin:0;
+     box-sizing:border-box;
 }
-
-:root
-{
-  --main-color:#eee;
-  --button-yellow:#f1c40f;
-  --button-orange:orange;
-  --font-black:#000
+ :root {
+     --main-color:#eee;
+     --button-yellow:#f1c40f;
+     --button-orange:orange;
+     --font-black:#000;
 }
-
-html
-{
-  font-size:10px;
-  font-family:Verdana,san-serif;
+ html {
+     font-size:10px;
+     font-family:Verdana,san-serif;
 }
-body
-{
-  background:var(--main-color)
+ body {
+     background:var(--main-color);
 }
-
-header 
-{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 0px;
-  flex-wrap:wrap;
+ header {
+     display:flex;
+     justify-content:space-between;
+     flex-direction:row;
+     align-items:center;
+     padding:20px 0px;
+     flex-wrap:wrap;
 }
-
-#header-img
-{
-  width:40%;
-  min-width:200px;
-  max-width:300px;
+ #header-img {
+     width:40%;
+     min-width:200px;
+     max-width:300px;
 }
-#nav-bar
-{
-  width:43%;
-  max-width:100%;
-  margin:0px 10px
+ #nav-bar {
+     width:50%;
+     max-width:100%;
+     margin:0px 10px 
 }
-#nav-bar ul
-{
-  list-style:none;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  align-items:center;
+ #nav-bar ul {
+     list-style:none;
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:space-between;
+     align-items:center;
 }
-
-#nav-bar ul li a
-{
-text-decoration:none;
-display:block;
-width:100%;
-color:var(--font-black);
-padding:0px 10px;
-font-size:1.6rem;
-text-transform:captalize;
-font-weight:400;
-
+ #nav-bar ul li a {
+     text-decoration:none;
+     display:block;
+     width:100%;
+     color:var(--font-black);
+     padding:0px 10px;
+     font-size:1.6rem;
+     text-transform:captalize;
+     font-weight:400;
 }
-
-main
-{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  width:80%;
-  min-width:80%;
-  max-width:100%;
-  margin:10px auto
+ main {
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     width:80%;
+     min-width:80%;
+     max-width:100%;
+     margin:10px auto 0px;
 }
-
-
-section#query h2
-{
-text-align:center;
-margin:10px 0px;
-font-size:1.9rem;
+ section#query h2 {
+     text-align:center;
+     margin:10px 0px;
+     font-size:1.9rem;
 }
-
-section form fieldset
-{
-border:none;
-display:flex;
-flex-direction:column;
+ section form fieldset {
+     border:none;
+     display:flex;
+     flex-direction:column;
 }
-
-section form fieldset input[type="email"]
-{
-  padding:5px;
-  width:300px;
-  margin:5px auto 15px;
+ section form fieldset input[type="email"] {
+     padding:5px;
+     width:300px;
+     margin:5px auto 15px;
 }
-
-
-section form fieldset input[type="submit"]
-{
-  padding:10px;
-  width:170px;
-  margin:0px auto 15px;
-  background:var(--button-yellow);
-  font-weight:600;
-  font-size:1.6rem;
-  cursor:pointer;
-  transition:all .5s linear ;
-  border:none;
-  border-radius:3px;
+ section form fieldset input[type="submit"] {
+     padding:10px;
+     width:170px;
+     margin:0px auto 15px;
+     background:var(--button-yellow);
+     font-weight:600;
+     font-size:1.6rem;
+     cursor:pointer;
+     transition:all .5s linear ;
+     border:none;
+     border-radius:3px;
 }
-
-section form fieldset input[type="submit"]:hover 
-{
-    background:var(--button-orange);
-
+ section form fieldset input[type="submit"]:hover {
+     background:var(--button-orange);
 }
-
-@media only screen and (max-width:600px)
-{
-    header{justify-content:center}
-    #header-img{width:250px;}
-    #nav-bar
-    {
-      width:100%;
+ .features {
+     width:100%;
+}
+ .features ul {
+     list-style:none;
+}
+ .features ul li {
+     display:flex;
+     align-items:center;
+     gap:40px;
+     margin:25px auto 0px;
+}
+ .features ul li i {
+     color:darkorange;
+     font-size:50px;
+}
+ .features ul li h3 {
+     font-size:1.6rem;
+     margin:10px 0px;
+}
+ .features ul li p {
+     font-size:1.29rem;
+}
+ div.icon{
+    width:150px;
+}
+ div.description{
+    width:max(900px,600px);
+}
+ iframe {
+     display:block;
+     margin:50px auto;
+     width:400px;
+}
+ #pricing {
+     display:flex;
+     justify-items:center;
+     align-items:center;
+     flex-wrap:wrap;
+     gap:30px;
+}
+ div.card {
+     border:1px solid #333;
+     text-align:center;
+     width:290px;
+     margin:auto auto;
+     padding:0px 0px 10px 
+}
+ div.card ul {
+     list-style:none;
+}
+ div.card h3 {
+     background:#ddd;
+     padding:12px;
+     font-size:1.4rem;
+}
+ div.card ul li {
+     margin:10px 0px;
+     font-size:1.33rem;
+}
+ div.card ul li:first-of-type {
+     font-weight:bold;
+     font-size:1.6rem;
+}
+ div.card button {
+     width:100px;
+     padding:5px;
+     border:none;
+     background:var(--button-yellow);
+     font-weight:bold;
+     margin:15px;
+     cursor:pointer;
+     transition:all .6s linear;
+}
+ div.card button:hover {
+     background:var(--button-orange);
+}
+ footer {
+     background:#ddd;
+     display:flex;
+     justify-content:end;
+     align-items:center;
+     flex-direction:column;
+     padding:10px;
+     width:100%;
+     margin:20px auto 0px;
+}
+ footer ul {
+     list-style:none;
+     display:flex;
+     gap:10px;
+     align-self:end;
+}
+ footer span {
+     align-self:end;
+     display:block;
+     margin:7px 0px;
+     font-size:1.1rem;
+}
+ footer ul li a {
+     color:#333;
+     font-size:1.3rem;
+     text-decoration:none;
+}
+ @media(max-width:550px) {
+     div.icon{
+        display:none;
     }
-    #nav-bar ul {justify-content:center;}
-
-}
-
-@media only screen and (max-width:768px)
-{
-   #nav-bar
-    {
-      width:50%;
+     .features li {
+        text-align:center;
     }
-  #nav-bar ul{margin:10px 10px;}
+}
+ @media (max-width:768px) {
+     header{
+         flex-direction:column;
+    }
+     header{
+        justify-content:center
+    }
+     #header-img{
+        width:250px;
+    }
+     #nav-bar {
+         width:100%;
+    }
+     #nav-bar ul {
+        justify-content:center;
+    }
+     #nav-bar ul{
+        margin:10px 10px;
+    }
 }
