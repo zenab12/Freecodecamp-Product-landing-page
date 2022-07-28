@@ -23,16 +23,23 @@
      align-items:center;
      padding:20px 0px;
      flex-wrap:wrap;
+     position:fixed;
+     top:0px;
+     left:0px;
+     background:#eee;
+     width:100%;
 }
  #header-img {
      width:40%;
      min-width:200px;
      max-width:300px;
+     order:1;
 }
  #nav-bar {
      width:50%;
      max-width:100%;
-     margin:0px 10px 
+     margin:0px 10px;
+     order:2;
 }
  #nav-bar ul {
      list-style:none;
@@ -58,7 +65,7 @@
      width:80%;
      min-width:80%;
      max-width:100%;
-     margin:10px auto 0px;
+     margin:150px auto 0px;
 }
  section#query h2 {
      text-align:center;
