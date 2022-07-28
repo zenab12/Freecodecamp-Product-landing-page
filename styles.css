@@ -201,7 +201,7 @@
      font-size:1.3rem;
      text-decoration:none;
 }
- @media(max-width:550px) {
+ @media only screen and (max-width:550px) {
      div.icon{
         display:none;
     }
@@ -209,7 +209,7 @@
         text-align:center;
     }
 }
- @media (max-width:768px) {
+ @media only screen and (max-width:768px) {
      header{
          flex-direction:column;
     }
