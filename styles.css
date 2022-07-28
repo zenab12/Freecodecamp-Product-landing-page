@@ -216,6 +216,10 @@
      header{
         justify-content:center
     }
+      main 
+      {
+           width:100%;
+      }
      #header-img{
         width:250px;
     }
